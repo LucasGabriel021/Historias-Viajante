@@ -1,0 +1,171 @@
+/*FONTE IMPORTADA*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
+/*RESET CSS*/
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+/*CONFIGS VARIÁVEIS*/
+:root {
+     --laranja: #F55E21;
+     --branco: #FFFFFF;
+     --preto: #000000;
+     --azulVerde: #122632;
+}
+
+
+/*CONFIGS GLOBAIS*/
+
+
+/*CONFIGS INDIVIDUAIS*/
+header {
+     width: 100%;
+     height: 72px;
+     background-color: var(--branco);
+}
+
+nav {
+     width: inherit;
+     height: inherit;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 112px 0px 112px;
+}
+
+#logo01 {
+     height: 48px;
+     width: auto;
+}
+
+#logo01 img {
+     width: 100%;
+     height: 100%;
+}
+
+#menuNav ul {
+     list-style: none;
+     display: flex;
+     column-gap: 32px;
+}
+
+#menuNav ul li {
+     padding: 8px 16px 8px 16px;
+     /* background-color: #122632; */
+     position: relative;
+}
+
+#menuNav ul li::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 5%;
+     width: 0;
+     border-radius: 5px;
+     background-color: var(--laranja);
+     transition: all linear .3s;
+}
+
+#menuNav ul li:hover::after{
+     width: 100%;
+}
+
+
+#menuNav ul li a {
+     text-decoration: none;
+     color: var(--laranja);
+}
+
+#bannerPrincipal {
+     width: 100%;
+     height: 560px;
+}
+
+#bannerPrincipal img {
+     width: 100%;
+     height: 100%;
+}
+
+#destaques {
+     width: 100%;
+     height: auto;
+     padding: 32px 112px 32px 112px;
+}
+
+#destaques h2 {
+     font-weight: 700;
+     font-size: 32px;
+     position: relative;
+}
+
+#destaques h2::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     margin-bottom: -5px;
+     height: 4px;
+     width: 150px;
+     background-color: var(--laranja);
+}
+
+#sectionCards {
+     margin-top: 32px;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     column-gap: 48px;
+     align-items: center;
+     justify-content: center;
+}
+
+.card {
+     width: 330px;
+     height: 440px;
+     background-color: #F55E21;
+     border-radius: 10px;
+}
+
+.card-bg img {
+     width: 100%;
+     height: 175px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+}
+
+.card-textos {
+     padding: 16px;
+}
+
+.card-autor {
+     display: flex;
+     column-gap: 16px;
+     margin-top: 16px;
+}
+
+.card-autor img {
+     width: 32px;
+     height: 32px;
+     border-radius: 100%;
+}
+
+footer {
+     width: 100%;
+     height: 120px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--preto);
+}
+
+footer img {
+     height: 48px;
+     width: auto;
+}
