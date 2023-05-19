@@ -285,6 +285,8 @@ nav {
 }
 
 .card a {
+     width: inherit;
+     height: inherit;
      text-decoration: none;
      display: block;
 }
