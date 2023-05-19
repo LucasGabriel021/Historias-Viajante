@@ -6,21 +6,26 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="Author" content="Lucas Gabriel G. Oliveira">
      <meta name="description" content="Projeto 2 da disciplina desenvolvimento Front-End">
-     <title>Histórias de um Viajante</title>
+     <title>Início | Histórias de um Viajante</title>
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
      <link rel="shortcut icon" href="assets/img/Favicon-Logo.ico" type="image/x-icon">
      <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-     <header>
+     <div id="botaoVoltar">
+          <a href="#header">
+               <img src="assets/img/IconeSeta.png" alt="Voltar">
+          </a>
+     </div>
+     <header id="header">
           <nav>
                <div id="logo01">
                     <img src="assets/img/Logo02.png" alt="Viajante">
                </div>
                <div id="menuNav">
                     <ul>
-                         <li><a href="">Inicio</a></li>
-                         <li><a href="">Galeria</a></li>
+                         <li><a href="index.html" class="item-menu--ativo">Início</a></li>
+                         <li><a href="galeria.html">Galeria</a></li>
                          <li><a href="">Contato</a></li>
                          <li><a href="">Blog</a></li>
                     </ul>
@@ -28,11 +33,26 @@
           </nav>
      </header>
      <section id="bannerPrincipal">
-          <h1>Histórias de um <br><span id="corViajante">Viajante</span></h1>
-          <hr style="background-color: #ffffff; margin: 20px 0px 20px 0px; width: 25%;">
-          <h5>Prepared by: Lucas Gabriel G. Oliveira</h5>
+          <div class="filtro-imagem"></div>
+          <div class="banner-principal--area">
+               <h1>Histórias de um <br><span id="corViajante">Viajante</span></h1>
+               <hr style="background-color: #ffffff; margin: 20px 0px 20px 0px; width: 25%;">
+               <h5>Prepared by: Lucas Gabriel G. Oliveira</h5>
+          </div>
+     </section>
+     <section id="descProjeto">
+          <div class="container desc-projeto--area">
+               <div class="desc-left">
+                    <img src="assets/img/Logo04.png" alt="Logo Histórias de um Viajante">
+               </div>
+               <div class="desc-right">
+                    <h2>Sobre o projeto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi itaque eum sequi beatae reprehenderit libero nam! Quis libero similique architecto optio sint. Provident architecto eum consequuntur obcaecati dolore magni!</p>
+               </div>
+          </div>
      </section>
      <section id="destaques">
+          <div class="filtro-imagem"></div>
           <h2>Destaques</h2>
           <div id="sectionCards">
                <div id="controlesSlide">
@@ -44,46 +64,52 @@
                     </div>
                </div>
                <div class="card">
-                    <div class="card-bg">
-                         <span class="legenda-foto">Veja mais</span>
-                         <img src="assets/img/Foto01.jpg" alt="Chapada dos Viadeiros">
-                    </div>
-                    <div class="card-textos">
-                         <h4>Alto Paraíso</h4>
-                         <p>O Parque Nacional da Chapada dos Veadeiros fica no estado de Goiás, no centro do Brasil. É conhecido pelos deslumbrantes desfiladeiros e formações de cristais de quartzo.</p>
-                         <div class="card-autor">
-                              <img src="assets/img/FotoLg.jpeg" alt="Lucas Gabriel">
-                              <span>Lucas Gabriel</span>
+                    <a href="galeria.html">
+                         <div class="card-bg">
+                              <span class="legenda-foto">Veja mais</span>
+                              <img src="assets/img/Foto01.jpg" alt="Chapada dos Viadeiros">
                          </div>
-                    </div>
+                         <div class="card-textos">
+                              <h4>Alto Paraíso</h4>
+                              <p>O Parque Nacional da Chapada dos Veadeiros fica no estado de Goiás, no centro do Brasil. É conhecido pelos deslumbrantes desfiladeiros e formações de cristais de quartzo.</p>
+                              <div class="card-autor">
+                                   <img src="assets/img/FotoLg.jpeg" alt="Lucas Gabriel">
+                                   <span>Lucas Gabriel</span>
+                              </div>
+                         </div>
+                    </a>
                </div>
                <div class="card">
-                    <div class="card-bg">
-                         <span class="legenda-foto">Veja mais</span>
-                         <img src="assets/img/Foto04.jpg" alt="Balneário Cambiriú">
-                    </div>
-                    <div class="card-textos">
-                         <h4>Balneário Camboriú</h4>
-                         <p>Balneário Camboriú é uma cidade turística no estado de Santa Catarina, no sul do Brasil. É conhecida pelos grandes edifícios e por praias como a Praia Central.</p>
-                         <div class="card-autor">
-                              <img src="assets/img/FotoLg.jpeg" alt="Lucas Gabriel">
-                              <span>Lucas Gabriel</span>
+                    <a href="galeria.html">
+                         <div class="card-bg">
+                              <span class="legenda-foto">Veja mais</span>
+                              <img src="assets/img/Foto04.jpg" alt="Balneário Cambiriú">
                          </div>
-                    </div>
+                         <div class="card-textos">
+                              <h4>Balneário Camboriú</h4>
+                              <p>Balneário Camboriú é uma cidade turística no estado de Santa Catarina, no sul do Brasil. É conhecida pelos grandes edifícios e por praias como a Praia Central.</p>
+                              <div class="card-autor">
+                                   <img src="assets/img/FotoLg.jpeg" alt="Lucas Gabriel">
+                                   <span>Lucas Gabriel</span>
+                              </div>
+                         </div>
+                    </a>
                </div>
                <div class="card">
-                    <div class="card-bg">
-                         <span class="legenda-foto">Veja mais</span>
-                         <img src="assets/img/Foto05.jpg" alt="Rio de Janeiro">
-                    </div>
-                    <div class="card-textos">
-                         <h4>Rio de Janeiro</h4>
-                         <p>O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema e o Cristo Redentor.</p>
-                         <div class="card-autor">
-                              <img src="assets/img/FotoLg.jpeg" alt="Lucas Gabriel">
-                              <span>Lucas Gabriel</span>
+                    <a href="galeria.html">
+                         <div class="card-bg">
+                              <span class="legenda-foto">Veja mais</span>
+                              <img src="assets/img/Foto05.jpg" alt="Rio de Janeiro">
                          </div>
-                    </div>
+                         <div class="card-textos">
+                              <h4>Rio de Janeiro</h4>
+                              <p>O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema e o Cristo Redentor.</p>
+                              <div class="card-autor">
+                                   <img src="assets/img/FotoLg.jpeg" alt="Lucas Gabriel">
+                                   <span>Lucas Gabriel</span>
+                              </div>
+                         </div>
+                    </a>     
                </div>
           </div>
           <div id="btnSlides">
@@ -94,6 +120,7 @@
      </section>
      <footer>
           <img src="assets/img/Logo01.png" alt="Logo 2">
+          <span>© 2023 Projeto Histórias de um Viajante.</span>
      </footer>
 </body>
 </html>

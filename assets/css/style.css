@@ -15,12 +15,17 @@
 :root {
      --laranja: #F55E21;
      --branco: #FFFFFF;
+     --cinza: #b3b3b3;
      --preto: #000000;
      --azulVerde: #122632;
 }
 
 
 /*CONFIGS GLOBAIS*/
+html{
+     scroll-behavior: smooth;
+}
+
 h1 {
      font-size: 76px;
      color: var(--branco);
@@ -31,12 +36,73 @@ h1 {
      color: var(--laranja); 
 }
 
+.container {
+     padding: 32px 112px 32px 112px;
+}
+
+body {
+     background-color: var(--preto);
+}
+
+body::-webkit-scrollbar {
+     width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+     background-color: var(--preto);
+}
+
+body::-webkit-scrollbar-thumb {
+     background-color: var(--laranja);
+     border-radius: 5px;
+}
+
+.filtro-imagem {
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     position: absolute;
+     z-index: 8;
+     top: 0;
+     left: 0;
+}
+
+#botaoVoltar {
+     width: 50px;
+     height: 50px;
+     border-radius: 100%;
+     padding: 12px;
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     margin-bottom: 32px;
+     margin-right: 32px;
+     z-index: 999;
+     background-color: var(--laranja);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+
+#botaoVoltar a {
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#botaoVoltar img {
+     width: 30px;
+     height: 30px;
+}
+
 
 /*CONFIGS INDIVIDUAIS*/
 header {
      width: 100%;
      height: 72px;
-     background-color: var(--branco);
+     background-color: var(--preto);
 }
 
 nav {
@@ -90,60 +156,92 @@ nav {
 #menuNav ul li a {
      text-decoration: none;
      color: var(--laranja);
+     font-weight: 700;
+}
+
+#menuNav ul li a.item-menu--ativo {
+     color: var(--branco);
 }
 
 #bannerPrincipal {
      background: url(../img/Bg-Principal02.png) center no-repeat;
      background-size: cover;
      background-attachment: fixed;
+     position: relative;
      width: 100%;
      height: 560px;
 }
 
-#bannerPrincipal img {
-     width: 100%;
-     height: 100%;
-}
-
-#bannerPrincipal {
+.banner-principal--area {
+     width: inherit;
+     height: inherit;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      text-align: center;
+     position: relative;
+     z-index: 9;
 }
 
-#bannerPrincipal hr {
-
-}
-
-#bannerPrincipal h5 {
+.banner-principal--area h5 {
      color: var(--branco);
      font-size: 24px;
      font-weight: 300;
+}
+
+#descProjeto {
+     height: 300px;
+     display: flex;
+     align-items: center;
+}
+
+.desc-projeto--area {
+     display: flex;
+     color: var(--branco);
+}
+
+.desc-left {
+     flex: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.desc-left img {
+     width: 50%;
+}
+
+.desc-right {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.desc-right h2 {
+     font-weight: 700;
+     font-size: 32px;
+     margin-bottom: 10px;
 }
 
 #destaques {
      width: 100%;
      height: auto;
      padding: 32px 112px 32px 112px;
+     background: url(../img/Bg-Secundario.jpg) center no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     position: relative;
 }
 
 #destaques h2 {
      font-weight: 700;
      font-size: 32px;
      position: relative;
-}
-
-#destaques h2::after {
-     content: '';
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     margin-bottom: -5px;
-     height: 4px;
-     width: 150px;
-     background-color: var(--laranja);
+     color: var(--branco);
+     text-align: center;
+     z-index: 9;
 }
 
 #sectionCards {
@@ -155,6 +253,7 @@ nav {
      align-items: center;
      justify-content: center;
      position: relative;
+     z-index: 9;
 }
 
 #controlesSlide {
@@ -170,7 +269,7 @@ nav {
 }
 
 .icones-controle span:hover {
-     color: var(--azulVerde);
+     color: var(--branco);
 }
 
 .icone-direita {
@@ -183,6 +282,11 @@ nav {
      background-color: #F55E21;
      border-radius: 10px;
      cursor: pointer;
+}
+
+.card a {
+     text-decoration: none;
+     display: block;
 }
 
 .card-bg {
@@ -277,6 +381,8 @@ nav {
      justify-content: center;
      column-gap: 16px;
      margin-top: 32px;
+     position: relative;
+     z-index: 9;
 }
 
 .bolinha {
@@ -288,13 +394,14 @@ nav {
 }
 
 .bolinha-ativada {
-     background-color: var(--azulVerde);
+     background-color: var(--branco);
 }
 
 footer {
      width: 100%;
      height: 120px;
      display: flex;
+     flex-direction: column;
      justify-content: center;
      align-items: center;
      background-color: var(--preto);
@@ -303,4 +410,10 @@ footer {
 footer img {
      height: 48px;
      width: auto;
+}
+
+footer span {
+     font-weight: 200;
+     font-size: 12px;
+     color: var(--cinza);
 }
