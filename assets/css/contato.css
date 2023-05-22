@@ -1,6 +1,7 @@
 #contato {
      background: url(../img/Bg-Contact.jpg) center no-repeat;
      background-size: cover;
+     background-attachment: fixed;
      height: calc(100vh - 72px);
      width: 100%;
      display: flex;
