@@ -18,7 +18,7 @@
                <img src="assets/img/IconeSeta.png" alt="Voltar">
           </a>
      </div>
-     <header id="#headerContato">
+     <header id="headerContato">
           <nav>
                <div id="logo01">
                     <img src="assets/img/Logo02.png" alt="Viajante">
@@ -28,10 +28,49 @@
                          <li><a href="index.html">Início</a></li>
                          <li><a href="galeria.html">Galeria</a></li>
                          <li><a href="contato.html" class="item-menu--ativo">Contato</a></li>
-                         <li><a href="">Blog</a></li>
+                         <li><a href="blog.html">Blog</a></li>
                     </ul>
                </div>
           </nav>
      </header>
+     <section id="contato">
+          <div class="filtro-imagem"></div>
+          <div class="container contato-area">
+               <div class="contato-left">
+                    <h2>Fale Conosco</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eveniet id excepturi nostrum labore alias veniam quis in soluta laudantium tempora consequuntur, minus itaque asperiores quod enim a quasi. Quisquam.</p>
+               </div>
+               <div class="contato-right">
+                    <form action="POST" id="formContato">
+                         <div id="nomeUser" class="box-input">
+                              <label for="nomeUsuario">Nome</label>
+                              <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Lucas" required>
+                         </div>
+                         <div id="sobrenomeUser" class="box-input">
+                              <label for="sobrenomeUsuario">Sobrenome</label>
+                              <input type="text" name="sobrenomeUsuario" id="sobrenomeUsuario" placeholder="Silverhand" required>
+                         </div>
+                         <div id="emailUser" class="box-input">
+                              <label for="emailUsuario">E-mail</label>
+                              <input type="email" name="emailUsuario" id="emailUsuario" placeholder="email@gmail.com" required>
+                         </div>
+                         <div id="telefoneUser" class="box-input">
+                              <label for="telefoneUsuario">Telefone</label>
+                              <input type="text" name="emailUsuario" id="emailUsuario" placeholder="(61) 9 9999-9999" required>
+                         </div>
+                         <div id="mensagemUser">
+                              <textarea name="mensagemUsuario" id="mensagemUsuario" placeholder="Insira uma mensagem ..."></textarea>
+                         </div>
+                         <div id="btnEnviar">
+                              <button>Enviar</button>
+                         </div>
+                    </form>
+               </div>
+          </div>
+     </section>
+     <footer>
+          <img src="assets/img/Logo01.png" alt="Logo 2">
+          <span>© 2023 Projeto Histórias de um Viajante.</span>
+     </footer>
 </body>
 </html>
