@@ -124,13 +124,14 @@
      padding: 0px 24px;
      border-radius: 8px;
      border: none;
-     border-bottom: 5px solid transparent;
+     border-bottom: 5px solid var(--azulVerde);
      text-align: center;
      font-size: 18px;
      font-weight: 700;
      background-color: var(--laranja);
      cursor: pointer;
      transition: all ease .3s;
+     color: var(--azulVerde);
 }
 
 #btnEnviar button:active {

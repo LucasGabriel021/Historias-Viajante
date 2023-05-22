@@ -1,0 +1,112 @@
+
+#bannerBlog {
+     background: url(../img/Bg-Blog.jpg) center no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     height: 70vh;
+     position: relative;
+}
+
+.banner-blog--area {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     z-index: 9;
+}
+
+.banner-blog--area h2 {
+     font-size: 48px;
+     font-weight: 700;
+     color: var(--branco);
+}
+
+#postagensBlog {
+     padding: 32px 0px;
+}
+
+.postagens-blog--area {
+     display: flex;
+     flex-direction: column;
+     gap: 32px;
+}
+
+.titulo-secao--blog {
+     background-color: var(--azulVerde);
+     padding: 32px;
+     display: flex;
+     align-items: center;
+     column-gap: 24px;
+}
+
+.titulo-secao--blog h3{
+     color: var(--laranja);
+     font-weight: 700;
+     font-size: 24px;
+}
+
+.barra-titulo {
+     width: 5px;
+     height: 50px;
+     background-color: var(--branco);
+}
+
+.blog-area--noticias {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 32px;
+}
+
+.card-new {
+     width: 70%;
+     height: auto;
+     margin: auto;
+}
+
+.card-info {
+     display: flex;
+}
+
+.card-news--date {
+     background-color: var(--azulVerde);
+     padding: 16px;
+     font-size: 18px;
+     font-weight: 700;
+     color: var(--laranja);
+}
+
+.card-news--comments {
+     padding: 16px;
+     background-color: var(--laranja);
+     color: var(--branco);
+     font-size: 18px;
+     font-weight: 700;
+}
+
+.card-news--image {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 250px;
+}
+
+.card-news--text {
+     padding: 16px;
+     background-color: blanchedalmond;
+     border-bottom: 5px solid var(--laranja);
+}
+
+.card-news--tittle {
+     font-weight: 700;
+     font-size: 18px;
+     color: var(--preto);
+}
+
+.card-news--resume {
+     margin-top: 8px;
+     font-weight: 400;
+     font-size: 16px;
+     color: var(--preto);
+}
