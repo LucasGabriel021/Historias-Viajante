@@ -73,6 +73,7 @@
 
 .card-news--date {
      background-color: var(--laranja);
+     height: 59px;
      padding: 16px 12px;
      font-size: 18px;
      font-weight: 700;
@@ -81,6 +82,7 @@
 
 .card-news--comments {
      width: 50px;
+     height: 59px;
      padding: 16px 12px;
      background-color: var(--branco);
      color: var(--preto);
@@ -147,4 +149,5 @@
      font-weight: 400;
      font-size: 16px;
      color: var(--preto);
+     text-align: justify;
 }
