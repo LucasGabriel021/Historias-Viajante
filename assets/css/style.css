@@ -223,6 +223,7 @@ nav {
      font-weight: 700;
      font-size: 32px;
      margin-bottom: 10px;
+     text-align: justify;
 }
 
 #destaques {
@@ -358,6 +359,7 @@ nav {
 .card-textos p {
      color: var(--branco);
      font-weight: 400;
+     text-align: justify;
 }
 
 .card-autor {
